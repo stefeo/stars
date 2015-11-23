@@ -21,14 +21,14 @@ namespace stars
         {
             StarField(100);
         }
-        private void StarField(int x)
+        private void StarField(int stars)
         {
             Graphics formGraphics = this.CreateGraphics();
             SolidBrush drawBrush = new SolidBrush(Color.Black);
             int xcoord, ycoord, size, rcolor, gcolor, bcolor, w;
             Random randNum = new Random();
 
-            for (w = 0; w <= x; w++)
+            for (w = 0; w <= stars; w++)
             {
                 rcolor = randNum.Next(1, 255);
                 gcolor = randNum.Next(1, 255);
